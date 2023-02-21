@@ -40,5 +40,13 @@ class Test_Stack(unittest.TestCase):
         Проверка с подачей значения в data
         :return:
         """
-        self.assertEqual(self.stack.top.data, True)
-        self.assertEqual(self.stack.top.next.next.next, None)
+        self.assertEqual(self.stack.top.data, 'текст')
+        self.assertEqual(self.stack.top.next.next, None)
+
+
+    def test_pop(self):
+        """
+        Проверка с подачей значения в data
+        :return:
+        """
+        self.assertEqual(self.stack.pop(), True)
