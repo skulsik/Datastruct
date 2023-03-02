@@ -44,16 +44,27 @@ from utils.custom_queue import *
 
 # ТЗ-3
 # Создает экземпляр
+# queue = Queue()
+# queue.enqueue('data1')
+# queue.enqueue('data2')
+# queue.enqueue('data3')
+# queue.enqueue('data4')
+# queue.enqueue('data5')
+#
+# print(queue.head.data)
+# print(queue.head.next.data)
+# print(queue.head.next.next.data)
+# print(queue.tail.data)
+# print(queue.tail.next)
+# print(queue.tail.next.data)
+
+
+# ТЗ-4
 queue = Queue()
 queue.enqueue('data1')
 queue.enqueue('data2')
 queue.enqueue('data3')
-queue.enqueue('data4')
-queue.enqueue('data5')
-
-print(queue.head.data)
-print(queue.head.next.data)
-print(queue.head.next.next.data)
-print(queue.tail.data)
-print(queue.tail.next)
-#print(queue.tail.next.data)
+print(queue.dequeue())
+print(queue.dequeue())
+print(queue.dequeue())
+print(queue.dequeue())

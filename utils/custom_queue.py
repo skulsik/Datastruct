@@ -30,3 +30,16 @@ class Queue:
         else:
             self.head = node
         self.tail = node
+
+
+    def dequeue(self):
+        """
+        Удаление объекта из очереди
+        :param data: Любое значение
+        :return:
+        """
+        if self.head is None:
+            return None
+        data = self.head.data
+        self.head = self.head.next
+        return data
