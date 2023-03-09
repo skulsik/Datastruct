@@ -1,5 +1,6 @@
-from utils.utils import *
+from utils.Stack import *
 from utils.custom_queue import *
+from utils.linked_list import *
 
 
 # Проверка логики по ТЗ-1
@@ -60,11 +61,19 @@ from utils.custom_queue import *
 
 
 # ТЗ-4
-queue = Queue()
-queue.enqueue('data1')
-queue.enqueue('data2')
-queue.enqueue('data3')
-print(queue.dequeue())
-print(queue.dequeue())
-print(queue.dequeue())
-print(queue.dequeue())
+# queue = Queue()
+# queue.enqueue('data1')
+# queue.enqueue('data2')
+# queue.enqueue('data3')
+# print(queue.dequeue())
+# print(queue.dequeue())
+# print(queue.dequeue())
+# print(queue.dequeue())
+
+# ТЗ-5
+ll = LinkedList()
+ll.insert_beginning({'id': 1})
+ll.insert_at_end({'id': 2})
+ll.insert_at_end({'id': 3})
+ll.insert_beginning({'id': 0})
+ll.print_ll()
