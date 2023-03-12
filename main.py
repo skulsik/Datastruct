@@ -71,9 +71,36 @@ from utils.linked_list import *
 # print(queue.dequeue())
 
 # ТЗ-5
+# ll = LinkedList()
+# ll.insert_beginning({'id': 1})
+# ll.insert_at_end({'id': 2})
+# ll.insert_at_end({'id': 3})
+# ll.insert_beginning({'id': 0})
+# ll.print_ll()
+
+# ТЗ-6
 ll = LinkedList()
-ll.insert_beginning({'id': 1})
-ll.insert_at_end({'id': 2})
-ll.insert_at_end({'id': 3})
-ll.insert_beginning({'id': 0})
-ll.print_ll()
+
+ll.insert_beginning({'id': 1, 'username': 'lazzy508509'})
+ll.insert_at_end({'id': 2, 'username': 'mik.roz'})
+ll.insert_at_end({'id': 3, 'username': 'mosh_s'})
+ll.insert_beginning({'id': 0, 'username': 'serebro'})
+
+# метод to_list()
+lst = ll.to_list
+for item in lst:
+    print(item)
+
+# get_data_by_id()
+user_data = ll.get_data_by_id(3)
+print(user_data)
+
+# работа блока try/except
+ll2 = LinkedList()
+ll2.insert_beginning({'id': 1, 'username': 'lazzy508509'})
+ll2.insert_at_end('idusername')
+ll2.insert_at_end([1, 2, 3])
+ll2.insert_at_end({'id': 2, 'username': 'mosh_s'})
+
+user_data = ll2.get_data_by_id(2)
+print(user_data)
